@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block pagecontent%}
+<div class="d-flex justify-content-center">
+<a class="btn btn-primary mr-3" href="{% url 'createform_question' %}" role="button">Create a Form</a>
+<a class="btn btn-success" href="{% url 'fillform_reponse' %}" role="button">Fill the form</a>
+
+</div>
+
+
+
+{% endblock%}

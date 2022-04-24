@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block pagecontent%}
+<div class="float-right">
+<a class="btn btn-danger" href="{% url 'home' %}" role="button">Exit & Home</a>
+
+</div>
+
+<form method='POST'>
+    {% csrf_token %}
+    {{questionForm.as_p}}
+    <button type="submit">Submit </button>
+
+
+
+{% endblock%}
